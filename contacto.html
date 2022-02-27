@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - DAVID SUELDO</title>
+    <link rel="shortcut icon" type="image/jpg" href="imagenes/logo/favicon.jpg">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Genos:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet">
+
+
+    <script src="recursos/jquery.min.js"></script>
+    <script src="recursos/cycle/jquery_cycle.js"></script>
+
+    <script>
+        $('#fotos').cycle({
+            fx: 'fade',
+            speed: 1000,
+            timeout: 3000,
+            prev: '#ant',
+            next: '#sig',
+            pause: false
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+    <div id="resolucion">
+
+        <header class="bg_contacto">
+
+            <nav>
+
+                <div class="logo">
+
+                </div>
+
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Información</a></li>
+                    <li><a href="city-tour.html">City Tour</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+
+            </nav>
+
+            <h1 class="iamsterdam"><span class="rojo">Con</span>tacto</h1>
+
+
+
+
+
+
+        </header>
+
+        <main>
+
+            <section class="formulario_contacto">
+
+
+
+                <form action="gracias.html" method="post" enctype="multipart/form-data">
+
+                    <div class="contacto_form">
+                        <h1>Contacto</h1>
+                    </div>
+
+                    <div>
+                        <span>Nombre</span>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                    </div>
+
+                    <div>
+                        <span>Apellido</span>
+                        <input type="text" name="apellido" placeholder="Ingrese su apellido">
+                    </div>
+
+
+                    <span class="span_sexo">Sexo</span>
+                    <div class="sexo">
+
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="sexo" id="masculino" value="masculino">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="sexo" id="femenino" value="femenino">
+                    </div>
+
+                    <div class="edad">
+                        <span>Edad</span>
+                        <input type="number" name="edad" id="edad">
+                    </div>
+
+
+
+                    <div>
+                        <span>Teléfono</span>
+                        <input type="tel" name="tel" placeholder="Ej.: 1111-1111">
+                    </div>
+
+                    <div>
+                        <span>Mail</span>
+                        <input type="text" name="mail" placeholder="Ej.: minombre@gmail.com">
+                    </div>
+
+                    <div>
+                        <span>Elija el tour</span>
+                        <select name="tour" id="tour">
+                            <option value="opcion" selected disabled>Seleccione una opcion</option>
+
+                            <optgroup label="Zonas">
+                                <option value="plaza_dam">Plaza Dam</option>
+                                <option value="barrio_rojo">Barrio Rojo</option>
+                                <option value="canal_tour">Canal Tour</option>
+                                <option value="de_grooyer">De Grooyer Molen</option>
+                            </optgroup>
+
+                            <optgroup label="Museos">
+                                <option value="van_gogh">Museo de Van Gogh</option>
+                                <option value="ana_frank">Museo de Anne Frank</option>
+                                <option value="rembrandt">Museo de Rembrandt</option>
+                                <option value="rijksmuseum">Museo de Rijks</option>
+                                
+                            </optgroup>
+
+
+                            <optgroup label="Iglesias">
+                                <option value="oude_kerk">Iglesia Oude Kerk</option>
+                                <option value="onze_lieve_vrouwekerk">Iglesia Nuestra Señora</option>
+                                <option value="westerkerk">Iglesia Westerkerk</option>
+                                <option value="basiliek_van_de_heilige">Basílica Van de Heilige</option>
+                            </optgroup>
+
+                            <optgroup label="Tour personalizado">
+                                <option value="individual">Individual</option>
+                                <option value="grupal">Grupal</option>
+
+                            </optgroup>
+
+
+
+                        </select>
+                        <iframe class="mapa_contacto"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.992147839996!2d-58.39821028436558!3d-34.604360065039955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaea670d4e67%3A0x2198c954311ad6d9!2sDa%20Vinci!5e0!3m2!1ses!2sar!4v1638576102174!5m2!1ses!2sar"
+                            width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="cupon">
+                        <span>Cupón</span>
+                        <input type="file" name="archivo" id="archivo">
+
+                    </div>
+
+                    <div>
+                        <span>Escríbanos su consulta</span>
+                        <textarea name="consulta" id="consulta" cols="30" rows="15"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar" id="enviar_contacto">
+                    </div>
+
+
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <section class="mapa_de_sitio">
+
+                <div class="inicio">
+                    <h2>Inicio</h2>
+                    <ul>
+                        <li><a href="index.html#restaurantes">Restaurantes</a></li>
+                        <li><a href="index.html#bares">Bares</a></li>
+                        <li><a href="index.html#hospedaje">Hospedaje</a></li>
+                        <li><a href="index.html#imagenes">Imagenes</a></li>
+                        <li><a href="index.html#alquiler">Alquiler</a></li>
+                        <li><a href="index.html#bici-tour">Bici Tour</a></li>
+                        <li><a href="index.html#ubicaciones">Ubicaciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="inicio">
+                    <h2>Información</h2>
+                    <ul>
+                        <li><a href="informacion.html#historia">Historia</a></li>
+                        <li><a href="informacion.html#cultura">Cultura</a></li>
+                        <li><a href="informacion.html#geografia">Geografía</a></li>
+                        <li><a href="informacion.html#temperaturas">Temperaturas</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="inicio">
+                    <h2>City Tour</h2>
+                    <ul>
+                        <li><a href="city-tour.html">Walking Tour</a></li>
+                        <li><a href="city-tour.html#museum">Museos</a></li>
+                        <li><a href="city-tour.html#church">Iglesias</a></li>
+                        <li><a href="contacto.html">Personalizado</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="inicio">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li><a href="contacto.html">Consultas</a></li>
+                        <li>Dirección: Av. Corrientes 2037</li>
+                        <li>Teléfono: 5032-0076</li>
+                        
+                    </ul>
+                </div>
+
+
+                <div class="redes">
+                    <ul>
+                        <li class="facebook"><a href="">Facebook</a></li>
+                        <li class="twitter"><a href="">Twitter</a></li>
+                        <li class="instagram"><a href="">Instagram</a></li>
+                        <li class="whatsapp"><a href="">Whatsapp</a></li>
+                    </ul>
+                </div>
+
+
+
+
+            </section>
+
+            <section class="copyright">
+
+
+
+                <ul>
+
+                    <li>Carrera: Diseño y Programación Web</li>
+                    <li>Escuela: Da Vinci</li>
+                    <li>Materia: Maquetado Web</li>
+                    <li>Docente: Mabel García</li>
+
+                </ul>
+
+                <h3>David Ezequiel Sueldo &copy; 2021</h3>
+
+            </section>
+
+        </footer>
+
+
+
+    </div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - DAVID SUELDO</title>
+    <link rel="shortcut icon" type="image/jpg" href="imagenes/logo/favicon.jpg">
+    <link rel="stylesheet" href="estilos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Genos:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet">
+
+
+    <script src="recursos/jquery.min.js"></script>
+    <script src="recursos/cycle/jquery_cycle.js"></script>
+
+    <script>
+        $('#fotos').cycle({
+            fx: 'fade',
+            speed: 1000,
+            timeout: 3000,
+            prev: '#ant',
+            next: '#sig',
+            pause: false
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+    <div id="resolucion">
+
+        <header class="bg_home">
+
+            <nav>
+
+                <div class="logo">
+
+                </div>
+
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Información</a></li>
+                    <li><a href="city-tour.html">City Tour</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+
+            <h1 class="iamsterdam"><span class="rojo">I am</span>sterdam</h1>
+
+
+            <div class="formulario">
+
+                <h2 class="viajes">¡Encontrá las mejores ofertas para tu viaje!</h2>
+
+                <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="application/x-www-form-urlencoded">
+
+
+
+                    <label for="adultos">ADULTOS
+                        <input type="number" name="adultos" id="adultos">
+                    </label>
+
+                    <label for="ninios">NIÑOS
+                        <input type="number" name="ninios" id="ninios">
+                    </label>
+
+                    <label for="checkin">CHECK IN
+                        <input type="date" name="checkin" id="checkin">
+                    </label>
+
+                    <label for="checkout">CHECK OUT
+                        <input type="date" name="checkout" id="checkout">
+                    </label>
+
+                    <input type="submit" name="enviar" value="BUSCAR" id="enviar">
+
+
+                </form>
+
+            </div>
+
+
+
+        </header>
+
+        <main>
+
+            <div class="iconos">
+
+                <ul>
+
+                    <li id="restaurantes">
+
+
+
+                        <a href="#restaurantes">Restaurantes</a>
+
+                        <div class="contenido_restaurantes">
+
+
+                            <article>
+                                <h2>Restaurantes</h2>
+
+                                <p>
+                                    Ámsterdam suele ser un comodín entre los europeos a la hora de viajar. Una de esas
+                                    ciudades que siempre se tiene en mente cuando se prepara unas vacaciones de verano
+                                    alejadas del clásico sol y playa, unos cuantos días de descanso en cualquier época
+                                    del
+                                    año o incluso una escapada de fin de semana. La preciosa ciudad holandesa es capaz
+                                    de
+                                    ofrecer tradición, arquitectura, compras, cultura y también gastronomía. Sin
+                                    embargo,
+                                    mas allá de sus vecinos, <strong>esta ciudad está preparada para todo tipo
+                                    de viajeros:
+                                    <span class="negrita">ideal
+                                        para aquellos
+                                        que quieren comer bien y barato al igual que para los que andan buscando buena
+                                        calidad y
+                                        experiencias culinarias</span></strong> (y no les importe gastar un poco más de
+                                    dinero).
+                                </p>
+                                <p> <strong> Si sales a
+                                        comer por Ámsterdam es muy importante ceñirse a los horarios holandeses (muy
+                                        diferentes
+                                        a los nuestros) ya que si te presentas a cenar a un
+                                        restaurante a las 9 o 10 de la noche, te encontrarás con las cocinas cerradas.
+                                        Lo
+                                        ideal
+                                        es ir a comer entre las 7 y 8 de la noche.</strong>
+
+                                </p>
+                            </article>
+
+
+
+
+
+                            <figure class="foto_nav">
+                                <img src="imagenes/restaurantes/the-pantry-amsterdam(400x400).jpg"
+                                    alt="Imagen de restaurante The Pantry ">
+                            </figure>
+
+
+
+                        </div>
+
+
+
+                    </li>
+
+                    <li id="bares">
+
+
+
+                        <a href="#bares">Bares</a>
+
+                        <div class="contenido_bares">
+
+                            <article>
+
+                                <h2>Bares</h2>
+
+
+
+                                <p>
+                                    La mejor zona dónde salir de fiesta por Ámsterdam se ubica muy cerca de la <span
+                                        class="negrita">Plaza Dam</span> , en
+                                    el centro de Ámsterdam, ya que en sus alrededores está lleno de bares y discotecas
+                                    de todos los estilos.
+                                </p>
+
+                                <p>
+                                    La conocida zona del <span class="negrita"> Barrio Rojo </span>también es muy
+                                    concurrida durante la noche y es dónde
+                                    vas a encontrar pubs con música jazz, blues y rock. Además, es dónde se concentran
+                                    muchos coffee shops donde podrás tomarte algo tranquilamente.
+                                </p>
+                                <p>
+                                    Si lo que estás buscando son discotecas dónde vivir la fiesta más auténticas
+                                    de Ámsterdam debes de dirigirte a <span lang="nl"
+                                        class="negrita">Rembrandtplein</span> o
+                                    <span lang="nl" class="negrita">Leidseplein</span>. Ésta és la zona más fiestera de
+                                    toda la ciudad, pues es dónde se concentran la mayoría de las discotecas
+                                    más
+                                    modernas y populares de Ámsterdam. Si quieres salir de fiesta por Ámsterdam te
+                                    recomendamos, que antes de entrar en alguna de las discotecas, tomar algo fuera, ya
+                                    que
+                                    el precio de las copas en los clubes, son bastante más caras que en los bares.
+                                </p>
+                            </article>
+
+                            <figure class="foto_nav">
+                                <img src="imagenes/bares/bares(400x400).jpg" alt="Imagen de bares">
+                            </figure>
+
+                        </div>
+
+
+
+                    </li>
+
+                    <li id="hospedaje">
+
+
+                        <a href="#hospedaje">Hospedaje</a>
+
+                        <div class="contenido_hospedaje">
+
+                            <article>
+
+                                <h2>Hospedaje</h2>
+
+                                <p>
+                                    <strong> La zona más popular para hospedarse en Ámsterdam es sin duda la que está
+                                        comprendida en el casco histórico de la ciudad; mas precisamente en el interior
+                                        del
+                                        anillo de canales mejor conocida como <span class="negrita" lang="en">Dam
+                                            Square</span></strong>. Este lugar acoge atractivos turísticos tan
+                                    importantes como el
+                                    Palacio Real, el Monumento Nacional, la Iglesia Nueva, o el famoso museo de cera
+                                    Madame Tussauds.
+                                    Desde esta área puedes llegar caminando desde un punto a otro en tan sólo 30
+                                    minutos.
+
+                                </p>
+
+                                <p>
+                                    Si elijes, por el contrario, alejarte un poco del centro de Ámsterdam o si estás en
+                                    búsqueda de precios más economicos de hospedaje encontrarás lugares desde festivos y
+                                    ruidosos, culturales y también elegantes y tranquilos.
+                                </p>
+
+                                <p>
+                                    Si estás buscando precios económicos en cualquiera de estas zonas <strong> nosotros
+                                        recomendamos los hoteles de <span class="negrita" lang="en">NH
+                                            Collection</span> ya que tiene una gran variedad de precios, opciones y
+                                        ubicaciones sin perder el lujo y la gran comodidad que los caracteriza.</strong>
+                                </p>
+
+                            </article>
+
+                            <figure class="foto_nav">
+                                <img src="imagenes/hoteles/grand-hotel(400x400).jpg" alt="Imagen de Hotel Inntel">
+                            </figure>
+
+                        </div>
+
+
+
+                    </li>
+
+                    <li id="imagenes">
+
+
+
+                        <a href="#imagenes">Imagenes</a>
+
+                        <div class="contenido_imagenes">
+
+                            <div class="izquierda">
+                                <a href="#" id="ant">PREV</a>
+                            </div>
+
+                            <div id="fotos">
+                                <img src="imagenes/galeria-cycle/winter.jpg" alt="Invierno en Amsterdam" />
+
+                                <img src="imagenes/galeria-cycle/iamsterdam-cycle.jpg" alt="Plaza Central" />
+
+                                <img src="imagenes/galeria-cycle/tulipanes.jpg" alt="Tulipales en la ciudad" />
+
+                                <img src="imagenes/galeria-cycle/canal.jpg" alt="Canal de Amsterdam" />
+
+                                <img src="imagenes/galeria-cycle/canal-iluminado.jpg"
+                                    alt="Canal iluminado en la noche" />
+
+                                <img src="imagenes/galeria-cycle/bicis.jpg" alt="Bicicletas al lado del canal" />
+                            </div>
+
+                            <div class="derecha">
+                                <a href="#" id="sig">NEXT</a>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li id="alquiler">
+
+
+
+                        <a href="#alquiler">Alquiler</a>
+
+                        <div class="contenido_alquiler">
+
+                            <article>
+
+                                <h2>Alquiler</h2>
+
+                                <p>
+                                    <strong>Si estás pensando alquilar un vehículo para recorrer Ámsterdam
+                                        seguramente no estés considerando que la mayor parte de sus atracciones sólo
+                                        puedes
+                                        disfrutarlas al transitarlas únicamente a pie como sus canales, calles angostas,
+                                        plaza central, etc.</strong> Mas allá de eso Ámsterdam es reconocida
+                                    mundialmente por ser una
+                                    de las ciudades mas <span lang="en">Eco Friendly</span> del mundo moderno por lo que
+                                    alquilar un medio de transporte para recorrer las calles de esta bonita ciudad
+                                    detenida en el barroco puede resultar un poco tedioso tras toparte con un enorme
+                                    ejército de bicicletas circulando por doquier. Es por eso que te recomendamos que el
+                                    alquiler de vehículo lo realices únicamente si tienes en tus planes visitar
+                                    lugares más alejados de la ciudad como por ejemplo: <span class="negrita"
+                                        lang="nl">Róterdam</span>, <span class="negrita">La Haya</span>, <span
+                                        class="negrita" lang="nl">Utrecht</span>, etc.
+                                </p>
+
+                                <p>
+                                    Sin embargo si lo tuyo no es caminar, pedalear o si presentas alguna dificultad para
+                                    hacerlo e igualmente deseas alquilar un vehiculo por día los pecios pueden variar
+                                    desde los 15 hasta los 50 euros por día.
+                                    Dentro de las opciones mas económicas pero sin perder la calidad y comodidad de su
+                                    servicio puedes encontrar a <a href="https://www.economybookings.com/">Economy
+                                        Bookings</a>, <a href="https://www.greenwheels.nl/">Green Wheels</a> y
+                                    <a
+                                        href="https://www.kayak.es/Alquiler-de-coches-Amsterdam-barato.1334.cars.ksp">Kayak</a>.
+
+                                </p>
+
+                                <figure class="foto_nav">
+                                    <img src="imagenes/alquiler/greenwheels.jpg" alt="Imagen de vehículo de alquiler">
+                                </figure>
+
+
+                            </article>
+
+                        </div>
+
+
+                    </li>
+
+                    <li id="bici-tour">
+
+
+
+                        <a href="#bici-tour">Bici Tour</a>
+
+                        <div class="contenido_bici-tour">
+
+                            <article>
+
+                                <h2>Bici Tour</h2>
+
+                                <p>
+                                    La bicicleta es una de las actividades más populares en Ámsterdam y el principal
+                                    medio de transporte en la ciudad. Con más de 15.000 Km de carriles bici, puedes
+                                    recorrer la ciudad entera sobre dos ruedas de manera divertida y segura.
+                                </p>
+
+                                <p>
+                                    Este tour de 2,5 horas te llevará a conocer los lugares más famosos de Ámsterdam con
+                                    un experimentado guía en español. Nuestro itinerario comienza por el pintoresco
+                                    barrio de <span class="negrita" lang="nl">Jordaan</span>, famoso por sus canales y
+                                    puentes. Continuaremos por lugares imprescindibles de la ciudad como el <span
+                                        class="negrita" lang="nl">Vondelpark</span>, el
+                                    principal parque de Amsterdam, así como dos de sus museos más prestigiosos: el
+                                    <span class="negrita" lang="nl">Rijksmuseum</span> y el <span class="negrita">Museo
+                                        Van Gogh</span>. A continuación, nos acercaremos a la <span
+                                        class="negrita">Fábrica de cerveza de Heineken</span> y el <span
+                                        class="negrita">Jardín Botánico.</span>
+                                </p>
+
+                                <p>
+
+                                    Al final del tour, tendrás la opción de seguir disfrutando de la bici y de Amsterdam
+                                    por el tiempo que quieras. Consultá con nuestros guías sobre las tarifas y
+                                    condiciones.
+                                </p>
+
+                                <figure class="foto_nav">
+                                    <img src="imagenes/bici-tour/people-on-bikes-in-amsterdam.jpg"
+                                        alt="Imagen de bicicletas">
+                                </figure>
+
+                            </article>
+
+                        </div>
+
+
+
+                    </li>
+
+                    <li id="ubicaciones">
+
+
+
+                        <a href="#ubicaciones">Ubicaciones</a>
+
+                        <div class="contenido_ubicaciones">
+
+                            <article>
+
+                                <h2>Ubicaciones</h2>
+
+                                <div class="columnas_nav">
+
+                                    <p>
+                                        <span class="negrita"><a href="https://goo.gl/maps/rGWRDF16GKyWtiZB9"
+                                                target="_blank">Plaza Dam</a></span>: La plaza Dam se encuentra en el
+                                        centro histórico de Ámsterdam.
+                                    </p>
+
+                                    <p>
+                                        <span class="negrita" lang="nl"><a href="https://goo.gl/maps/VqEGqDpQfEtRjrRh8"
+                                                target="_blank">Oude Kerk</a></span>: Iglesia del siglo XIII con
+                                        actividades religiosas y culturales, incluidos conciertos.
+                                    </p>
+
+                                    <p>
+                                        <span class="negrita" lang="fr"><a href="https://goo.gl/maps/mCyURAMmTgZ1GSeq6"
+                                                target="_blank">Madame Tussauds</a></span>:
+                                        Museo con réplicas de cera en tamaño real de famosos e ídolos históricos.
+                                    </p>
+
+                                    <p>
+                                        <span class="negrita"><a href="https://goo.gl/maps/EwoS77vatnCHdzDR7"
+                                                target="_blank">Palacio Real de Ámsterdam</a></span>: Palacio del año
+                                        1808
+                                        destinado a recepciones reales.
+                                    </p>
+
+                                    <p>
+                                        <span class="negrita"><a href="https://goo.gl/maps/FGdb7aaEX6NvmgkD8"
+                                                target="_blank">Museo Rembrandt</a></span>: Casa donde Rembrandt vivió y
+                                        trabajó durante 20 años.
+                                    </p>
+
+                                    <p>
+                                        <span class="negrita"><a href="https://goo.gl/maps/THxadXk93wLKBAJD7"
+                                                target="_blank">Museo Van Gogh</a></span>: Museo con la mayor colección
+                                        de cuadros Van Gogh del mundo.
+                                    </p>
+
+                                    <p>
+                                        <span class="negrita"><a href="https://goo.gl/maps/VBLsxuLSfgR2jkQm6"
+                                                target="_blank">Nemo</a></span>: Museo interactivo de ciencia,
+                                        situado frente al mar. Experimentos y espectáculos.
+                                    </p>
+
+                                </div>
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11586.843310646775!2d4.888358200448028!3d52.373434457624505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c6c0880e15%3A0x39914e99b51dcf8a!2sPalacio%20Real%20de%20%C3%81msterdam!5e0!3m2!1ses-419!2sar!4v1638240046064!5m2!1ses-419!2sar"
+                                    width="400" height="400" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+
+                            </article>
+
+                        </div>
+
+
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+            <section class="cuerpo">
+
+                <div class="columnas">
+                    
+                    <h2>¿Por qué Ámsterdam?</h2>
+
+                    <p>Porque Ámsterdam es una de las ciudades más hermosas y atractivas de Europa, con una forma de vida muy placentera gracias a sus atractivos turísticos con los que cuenta y por lo que la hace una ciudad que debes de conocer en algún momento de tu vida sin importar la edad que tengas. Sus bellezas que puedes disfrutar son desde sus impresionantes obras arquitectónicas, sus parques, jardines, iglesias, gastronomía, museos y actividades a realizar a campo abierto. Asímismo no puedes perderte de la historia que guarda esta ciudad en cada uno de sus rincones como por ejemplo la Casa de Ana Frank, detenenida en el tiempo del holocausto, o el Museo de Rembrandt la cual posee la más grande colección de sus obras en el mundo.
+
+                    </p>
+                                  
+                               
+                </div>
+
+                
+                <iframe class="video" width="700" height="394" src="https://www.youtube.com/embed/yu3pvWGnYVs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  ></iframe>   
+
+
+
+
+            </section>
+
+
+
+        </main>
+
+        <footer>
+            <section class="mapa_de_sitio">
+
+                <div class="inicio">
+                    <h2>Inicio</h2>
+                    <ul>
+                        <li><a href="#restaurantes">Restaurantes</a></li>
+                        <li><a href="#bares">Bares</a></li>
+                        <li><a href="#hospedaje">Hospedaje</a></li>
+                        <li><a href="#imagenes">Imagenes</a></li>
+                        <li><a href="#alquiler">Alquiler</a></li>
+                        <li><a href="#bici-tour">Bici Tour</a></li>
+                        <li><a href="#ubicaciones">Ubicaciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="inicio">
+                    <h2>Información</h2>
+                    <ul>
+                        <li><a href="informacion.html#historia">Historia</a></li>
+                        <li><a href="informacion.html#cultura">Cultura</a></li>
+                        <li><a href="informacion.html#geografia">Geografía</a></li>
+                        <li><a href="informacion.html#temperaturas">Temperaturas</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="inicio">
+                    <h2>City Tour</h2>
+                    <ul>
+                        <li><a href="city-tour.html">Walking Tour</a></li>
+                        <li><a href="city-tour.html#museum">Museos</a></li>
+                        <li><a href="city-tour.html#church">Iglesias</a></li>
+                        <li><a href="contacto.html">Personalizado</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="inicio">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li><a href="contacto.html">Consultas</a></li>
+                        <li>Dirección: Av. Corrientes 2037</li>
+                        <li>Teléfono: 5032-0076</li>
+                        
+                    </ul>
+                </div>
+
+
+                <div class="redes">
+                    <ul>
+                        <li class="facebook"><a href="https://www.facebook.com/davidezequiel.sueldo">Facebook</a></li>
+                        <li class="twitter"><a href="https://twitter.com/home">Twitter</a></li>
+                        <li class="instagram"><a href="https://www.instagram.com/el.bicho.de.paternal/">Instagram</a></li>
+                        <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+541149601579">Whatsapp</a></li>
+                    </ul>
+                </div>
+
+
+
+
+            </section>
+
+            <section class="copyright">
+
+                
+
+                <ul>
+                    
+                    <li>Carrera: Diseño y Programación Web</li>
+                    <li>Escuela: Da Vinci</li>
+                    <li>Materia: Maquetado Web</li>
+                    <li>Docente: Mabel García</li>
+
+                </ul>
+
+                <h3>David Ezequiel Sueldo &copy; 2021</h3>
+
+            </section>
+
+        </footer>
+
+    </div>
+
+</body>
+
+
+</html>
